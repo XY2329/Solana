@@ -1,23 +1,27 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
-import "./styles/globals.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThirdwebProvider } from '@thirdweb-dev/react';
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
-// This is the chain your dApp will work on.
-// Change this to the chain your app is built for.
-// You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
-const activeChain = "ethereum";
+import { StateContextProvider } from './context';
+import App from './App';
+import './index.css';
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+const sdk = new ThirdwebSDK("mumbai", {
+  clientId: "caffb1675b2f92561a307790d4109539",
+});
+
+const contract = await sdk.getContract("0x3ae62BFB392B7bee8040af1f61E2Fb46599Eba29");
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <React.StrictMode>
-    <ThirdwebProvider
-      clientId={import.meta.env.VITE_TEMPLATE_CLIENT_ID}
-      activeChain={activeChain}
-    >
-      <App />
-    </ThirdwebProvider>
-  </React.StrictMode>
-);
+  <ThirdwebProvider sdk={sdk} activeChain="mumbai">
+    <Router>
+      <StateContextProvider contract={contract}>
+        <App />
+      </StateContextProvider>
+    </Router>
+  </ThirdwebProvider>
+)
