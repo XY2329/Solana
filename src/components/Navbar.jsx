@@ -48,6 +48,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+
 // Define the pages and menu options
 const pages = ['Home', 'Events', 'Help', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -66,6 +67,7 @@ function Navbar() {
   const handleCloseNavMenu = () => setAnchorElNav(null);
   const handleCloseUserMenu = () => setAnchorElUser(null);
 
+  
   // Scroll event listener
   useEffect(() => {
     const handleScroll = () => {
@@ -79,6 +81,20 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Define the routes for each option
+  const routes = {
+    Dashboard: '/portfolio',
+    Profile: '/profile',
+    Account: '/account',
+    Logout: '/logout',
+  };
+
+  // Function to handle navigation to the specified route
+  const handleNavigate = (routes) => {
+    handleCloseUserMenu(); // Close the menu before navigating
+    navigate(routes);       // Navigate to the specified route
+  };
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: color ? 'rgba(0, 0, 0, 0.9)' : 'transparent', transition: 'background-color 0.3s ease-in' }}>
@@ -115,22 +131,36 @@ function Navbar() {
             </SearchIconWrapper>
             <StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} style={{ width: '100%', height: '100%', fontSize: '1.4rem' }} value={searchValue} onChange={(e) => setSearchValue(e.target.value)} />
           </Search>
+    <div>
+      {/* User element */}
+      <div>
+        <Tooltip title="Open settings">
+          <IconButton onClick={handleOpenUserMenu}>
+            <Avatar alt="User" src="" />
+          </IconButton>
+        </Tooltip>
+        <Menu
+          id="menu-appbar"
+          anchorEl={anchorElUser}
+          anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+          keepMounted
+          transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+          open={Boolean(anchorElUser)}
+          onClose={handleCloseUserMenu}
+        >
+          {/* Menu items */}
+          {Object.entries(routes).map(([option, route]) => (
+            <MenuItem key={option} onClick={() => handleNavigate(route)}>
+              <Typography textAlign="center" variant="body1">{option}</Typography>
+            </MenuItem>
+          ))}
+        </Menu>
+      </div>
+    </div>
 
-          {/* User element */}
-          <Box>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="User" src="" />
-              </IconButton>
-            </Tooltip>
-            <Menu id="menu-appbar" anchorEl={anchorElUser} anchorOrigin={{ vertical: 'top', horizontal: 'right' }} keepMounted transformOrigin={{ vertical: 'top', horizontal: 'right' }} open={Boolean(anchorElUser)} onClose={handleCloseUserMenu}>
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center" variant="body1">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+
+
+
         </Toolbar>
       </Container>
     </AppBar>
