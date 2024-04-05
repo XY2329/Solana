@@ -23,7 +23,6 @@
 .NFT_box_img{
     grid-column: 1/-1;
     grid-row: 1/-1;
-    background-color: black;
 }
 
 .NFT_box_img_img{

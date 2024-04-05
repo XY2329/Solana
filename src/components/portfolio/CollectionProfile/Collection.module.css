@@ -8,7 +8,7 @@
 
 .CollectionProfile_box{
     width: 80%;
-    height: 300px;
+    height: 350px;
     margin: auto;
     margin-bottom:80px ;
 
@@ -26,7 +26,7 @@
 .CollectionProfile_box_left_img {
     border-radius: 1rem;
     width: 380px;
-    height: 220px;
+    height: 200px;
     display: flex;
 }
 
