@@ -11,9 +11,7 @@ const Portfolio = () => {
 
   return (
     <div>
-      <Title/>
       <CollectionProfile />
-
       <Title heading="NFT Collections" />
       <Filter />
       <NFT NFTData={collectionArray} />

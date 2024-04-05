@@ -10,7 +10,7 @@ const CollectionProfile = () => {
         { title: "Total NFT", description: "4" },
         { title: "Concerts Coming", description: "2" },
         { title: "Total Points", description: "1600" },
-        { title: "Total Earning", description: "1600"},
+        { title: "Total Earning", description: "16 USD"},
         
     ];
 
@@ -32,12 +32,12 @@ const CollectionProfile = () => {
     
                     <div className={Styles.CollectionProfile_box_middle_box}>
                     {cardArray.map((card, index) => (
-                        <div className={Styles.CollectionProfile_box_middle_box_card} key={index + 1}>
-                             <div className={Styles.CollectionProfile_box_middle_box_card_content}>
-                                <span>{card.title}</span>
-                                <h3>{card.description}</h3>
-                                
-                            </div>
+                            <div className={Styles.CollectionProfile_box_middle_box_card} key={index + 1}>
+                                <div className={Styles.CollectionProfile_box_middle_box_card_content}>
+                                    <span>{card.title}</span>
+                                    <h2>{card.description}</h2>
+                                    
+                                </div>
                             </div>
                         ))}
                     </div>

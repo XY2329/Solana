@@ -2,6 +2,7 @@
 .NFT{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 80px;
     display: grid ;
     grid-template-columns: repeat(4,1fr);
     gap: 2rem;
@@ -15,16 +16,19 @@
 }
 
 .NFT_box:hover{
-    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 25px 30px rgba(0, 0, 0, 0.1);
 }
 
 
 .NFT_box_img{
     grid-column: 1/-1;
     grid-row: 1/-1;
+    background-color: black;
 }
 
-.NFT_box_img img{
+.NFT_box_img_img{
+    width: 280px;
+    height: 300px;
     border-radius: 1rem;
 }
 

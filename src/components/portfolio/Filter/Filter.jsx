@@ -34,7 +34,7 @@ const Filter = () => {
             <div className={Styles.filter_box_left}>
               <button onClick={() => {}}>NFTs</button>
               <button onClick={() => {}}>Owned</button>
-              <button onClick={() => {}}>Arts</button>
+              <button onClick={() => {}}>Concerts</button>
               <button onClick={() => {}}>Sports</button>
               <button onClick={() => {}}>Photography</button>
             </div>
