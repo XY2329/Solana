@@ -50,7 +50,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 // Define the pages and menu options
-const pages = ['Home', 'Events', 'Help', 'Contact Us'];
+const pages = ['Home', 'Events', 'Help', 'Marketplace', 'Contact Us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -97,7 +97,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: color ? 'rgba(0, 0, 0, 0.9)' : 'transparent', transition: 'background-color 0.3s ease-in' }}>
+    <AppBar position="fixed" sx={{ backgroundColor: color ? 'rgba(0, 0, 0, 0.9)' : 'transparent', transition: 'background-color 0.2s ease-in' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo and Text */}

@@ -14,9 +14,9 @@ const EventCard = (eventData) => {
             <div className="flex justify-between items-center mb-8">
                 <h2 className="text-4xl font-bold">Upcoming Events</h2>
                 <div>
-                    <button className="rounded-full border px-6 py-2 mr-6 text-sm">Button 1</button>
-                    <button className="rounded-full border px-6 py-2 mr-6 text-sm">Button 2</button>
-                    <button className="rounded-full border px-6 py-2 text-sm">Button 3</button>
+                    <button className="rounded-full border px-6 py-2 mr-6 text-sm">Concerts</button>
+                    <button className="rounded-full border px-6 py-2 mr-6 text-sm">Sports</button>
+                    <button className="rounded-full border px-6 py-2 text-sm">Festivals</button>
                 </div>
             </div>
             <div className="flex flex-wrap justify-start -mx-2">
@@ -26,10 +26,10 @@ const EventCard = (eventData) => {
                         <div className="flex flex-col bg-white rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform transition-all duration-300 ease-in-out hover:shadow-2xl">
                             {/* Increase image height for a better ratio */}
                             <div className="w-full h-72 overflow-hidden">
-                                <img src={eventData.img} alt={eventData.title} className="w-full h-full object-cover" />
+                                <img src={eventData.img} alt={eventData.artist} className="w-full h-full object-cover" />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-semibold mb-2">{eventData.title}</h3>
+                                <h3 className="text-xl font-semibold mb-2">{eventData.artist}</h3>
                                 <p className="text-gray-600 mb-4">{eventData.des}</p>
                                 <button
                                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"

@@ -13,9 +13,9 @@ const Payment = () => {
     <div className="relative min-h-screen bg-gray-100 flex flex-col justify-between">
       
       {/* style bg image*/}
-      <div className="absolute top-0 w-full h-1/2 bg-cover bg-center " style={{ backgroundImage: `url(${eventData.img})`,  backgroundSize: 600,  }}></div>
+      <div className="absolute top-0 w-full h-[60vh] bg-cover bg-center " style={{ backgroundImage: `url(${eventData.img})`,  backgroundSize: 600, filter: 'blur(8px)' }}></div>
       
-      <div className="pt-[100vh] container mx-auto px-4 pt-64 pb-16">
+      <div className="pt-[60vh] container mx-auto px-4 pt-64 pb-15 mb-4">
         <Pay eventData={eventData} />
       </div>
     </div>
