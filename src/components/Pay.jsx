@@ -11,6 +11,7 @@ import {
   toBigNumber,
 } from "@metaplex-foundation/js";
 import * as fs from "fs";
+import {Mint} from './Mint.jsx';
 
 const Pay = ({ eventData }) => {
   const [ticketQuantity, setTicketQuantity] = useState(0);
@@ -30,11 +31,12 @@ const Pay = ({ eventData }) => {
   const { connected } = useWallet();
   const [value, setValue] = React.useState(0);
 
-  
+
+
 
   const handleClick = () => {
 
-    // Add your logic here
+
   };
 
   return (
@@ -76,7 +78,7 @@ const Pay = ({ eventData }) => {
           </FormControl>
           <div className="flex justify-between mt-4">
             <WalletMultiButton />
-            <Button variant="contained" color="secondary" onClick={handleClick} disabled={!connected}>Buy Now</Button>
+            <Mint/>
           </div>
         </div>
       </TabPanel>
