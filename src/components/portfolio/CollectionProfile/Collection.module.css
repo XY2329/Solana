@@ -3,7 +3,7 @@
 
 .CollectionProfile{
     width: 100%;
-    margin-top: 8rem;
+    margin-top: 1.5rem;
 }
 
 .CollectionProfile_box{
@@ -18,7 +18,7 @@
     align-items: center;
 
     background-color: #F0F0F0;
-    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 25px 20px 20px 20px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     padding: 1rem 2rem ;
 }

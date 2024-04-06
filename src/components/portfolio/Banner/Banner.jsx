@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div className={Style.banner}>
       <div>
-        <img src="/card_image/navbar-icons.png" objectFit="cover" alt="background" width={2000} height={100}/>
+        <img src="/card_image/navbar-icons.png" alt="background" width={2000} height={200}/>
       </div>
       </div> 
   )
