@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import { Button, TextField, Radio, RadioGroup, FormControlLabel, FormControl, Typography, Box, Tabs, Tab } from "@mui/material";
-import { ConnectWallet } from '../components';
+import { useWallet } from '@solana/wallet-adapter-react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { Connection, Keypair, PublicKey } from "@solana/web3.js";
+import {
+  Metaplex,
+  keypairIdentity,
+  bundlrStorage,
+  toMetaplexFile,
+  toBigNumber,
+} from "@metaplex-foundation/js";
+import * as fs from "fs";
 
 const Pay = ({ eventData }) => {
   const [ticketQuantity, setTicketQuantity] = useState(0);
@@ -17,7 +27,15 @@ const Pay = ({ eventData }) => {
     setValue(newValue);
   };
 
+  const { connected } = useWallet();
   const [value, setValue] = React.useState(0);
+
+  
+
+  const handleClick = () => {
+
+    // Add your logic here
+  };
 
   return (
     <div className="bg-white p-6 shadow-lg rounded mx-auto my-12" style={{ maxWidth: '950px', width: '100%', minHeight: '650px' }}>
@@ -57,8 +75,8 @@ const Pay = ({ eventData }) => {
             </RadioGroup>
           </FormControl>
           <div className="flex justify-between mt-4">
-            <ConnectWallet/>
-            <Button variant="contained" color="secondary" >Buy Now</Button>
+            <WalletMultiButton />
+            <Button variant="contained" color="secondary" onClick={handleClick} disabled={!connected}>Buy Now</Button>
           </div>
         </div>
       </TabPanel>
