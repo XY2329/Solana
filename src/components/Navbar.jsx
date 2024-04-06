@@ -88,7 +88,6 @@ function Navbar() {
     Profile: '/profile',
     Account: '/account',
     Logout: '/logout',
-    Marketplace: '/marketplace',
   };
 
   // Function to handle navigation to the specified route
