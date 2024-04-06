@@ -3,7 +3,7 @@ import { Button, TextField, Radio, RadioGroup, FormControlLabel, FormControl, Ty
 import { ConnectWallet } from '../components';
 import ColData from "../datafile/col.json";
 import { useWallet } from '@solana/wallet-adapter-react';
-import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+//import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
 import {
   Metaplex,
@@ -15,7 +15,11 @@ import {
 import * as fs from "fs";
 
 
+
 const Pay = ({ eventData }) => {
+
+  const { connection } = useWallet();
+
   const [ticketQuantity, setTicketQuantity] = useState(0);
   const [isBNPL, setIsBNPL] = useState('full');
   const ticketPrice = 0.01; // Assuming a single price for all tickets
@@ -32,14 +36,6 @@ const Pay = ({ eventData }) => {
 
   const { connected } = useWallet();
   const [value, setValue] = React.useState(0);
-
-
-
-
-  const handleClick = () => {
-
-
-  };
 
   return (
     <div className="bg-white p-6 shadow-lg rounded mx-auto my-12" style={{ maxWidth: '950px', width: '100%', minHeight: '650px', borderRadius: '15px' }}>
@@ -83,8 +79,18 @@ const Pay = ({ eventData }) => {
             </FormControl>
           </div>
           <div className="flex justify-between mt-4">
-            <WalletMultiButton />
-            
+            <ConnectWallet />
+            <button
+              disabled={!connection}
+              style={{
+                backgroundColor: '#a99fec', // Green when connected, red otherwise
+                color: 'white',
+                padding: '10px 20px',
+                border: 'none',
+                cursor: 'pointer',
+                borderRadius: '5px'
+              }}
+            >Mint</button>
           </div>
         </div>
       </TabPanel>
@@ -121,7 +127,7 @@ const Pay = ({ eventData }) => {
             ))}
           </div>
           {/* New line of text below images */}
-          <div style={{ textAlign: 'left', marginTop: '8px', color:'grey' }}>
+          <div style={{ textAlign: 'left', marginTop: '8px', color: 'grey' }}>
             <p>*When you purchase the collectible, it's randomly selected.</p>
           </div>
           {/* Button Container */}
