@@ -13,7 +13,7 @@ import {
   toBigNumber,
 } from "@metaplex-foundation/js";
 import * as fs from "fs";
-import {Mint} from './Mint.jsx';
+
 
 const Pay = ({ eventData }) => {
   const [ticketQuantity, setTicketQuantity] = useState(0);
@@ -84,7 +84,7 @@ const Pay = ({ eventData }) => {
           </div>
           <div className="flex justify-between mt-4">
             <WalletMultiButton />
-            <Mint/>
+            
           </div>
         </div>
       </TabPanel>
