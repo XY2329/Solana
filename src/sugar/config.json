@@ -1,0 +1,34 @@
+
+{
+    "number": 4,
+    "symbol": "TW",
+    "sellerFeeBasisPoints": 1000,
+    "isMutable": true,
+    "isSequential": false,
+    "ruleSet": null,
+    "creators": [
+        {
+            "address": "CahNPSvfpnbQ64m4SQFKeHPVqB2Qsyb8zQiGq7fK36zk",
+            "share": 100
+        }
+    ],    
+    "uploadMethod": "bundlr",
+    "awsS3Bucket": null,
+    "retainAuthority": true,
+    "awsConfig": null,
+    "nftStorageAuthToken": null,
+    "shdwStorageAccount": null,
+    "pinataConfig": null,
+    "hiddenSettings": null,
+    "guards": {
+        "default": {
+          "solPayment": {
+            "value": 0.01,
+            "destination": "6hALotwjebAnbn3JsuEBWmvR8tRQSmqUd8YZY2LfWMYc"
+          },
+          "startDate": {
+            "date": "2022-10-23T20:00:00Z"
+          }
+        }
+      }    
+}

@@ -88,7 +88,7 @@ const Pay = ({ eventData }) => {
                 cursor: 'pointer',
                 borderRadius: '5px'
               }}
-            >Mint</button>
+            >Buy Tickets</button>
           </div>
         </div>
       </TabPanel>

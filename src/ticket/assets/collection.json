@@ -1,0 +1,23 @@
+{
+    "name": "Taylor Swift Ticket",
+    "symbol": "TST",
+    "description": "Taylor Swift T",
+    "seller_fee_basis_points": 1000, 
+    "image": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+    "attributes": [
+      {
+        "trait_type": "Category",
+        "value": "Concert"
+      }
+    ],
+    "properties": {
+      "files": [
+        {
+          "uri": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+          "type": "image/png" 
+        }
+      ],
+      "category": "image" 
+    }
+  }
+  

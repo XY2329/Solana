@@ -1,0 +1,58 @@
+{
+  "program": {
+    "candyMachine": "DBiPQh3WR7KMZah3jx1kbKrzvv917LvXtQJVdmJSj9Bk",
+    "candyGuard": "5NAykbhHYyn14rwsaJ6iFmzqhTMQaKEnKxLK46u32FFn",
+    "candyMachineCreator": "7FjVyBEqEJpFPef65Cv5zyu2w8wxoXTumwb88j1KyX5X",
+    "collectionMint": "3ueXZVhYSYt9oYWShJxKyYiB1cBqjLhDmMCBLn1DumLz"
+  },
+  "items": {
+    "-1": {
+      "name": "Taylor Swift Ticket",
+      "image_hash": "24068577187d37d771af69a722b9cab01b21b38a2df513b8b2dc59b2684fda94",
+      "image_link": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+      "metadata_hash": "071b6438d0f3b88657c13c4b1b7a3b9d6d997b1da5eb2b4747da6719007058b5",
+      "metadata_link": "https://arweave.net/KeP1giOtEQCfUGpUQZidP_icPMQi-YH0C9Y2wOZcgR8",
+      "onChain": true
+    },
+    "0": {
+      "name": "Taylor Swift Ticket",
+      "image_hash": "24068577187d37d771af69a722b9cab01b21b38a2df513b8b2dc59b2684fda94",
+      "image_link": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+      "metadata_hash": "071b6438d0f3b88657c13c4b1b7a3b9d6d997b1da5eb2b4747da6719007058b5",
+      "metadata_link": "https://arweave.net/QL9MJaQ-glt585nlQSv-JZpXWtIinTUMiMnUmy_cl4U",
+      "onChain": true
+    },
+    "1": {
+      "name": "Taylor Swift Ticket",
+      "image_hash": "24068577187d37d771af69a722b9cab01b21b38a2df513b8b2dc59b2684fda94",
+      "image_link": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+      "metadata_hash": "071b6438d0f3b88657c13c4b1b7a3b9d6d997b1da5eb2b4747da6719007058b5",
+      "metadata_link": "https://arweave.net/acXPynZNYQqFp0HKUsw1zJnQCpyKAaaM1ued9-GSYzg",
+      "onChain": true
+    },
+    "2": {
+      "name": "Taylor Swift Ticket",
+      "image_hash": "24068577187d37d771af69a722b9cab01b21b38a2df513b8b2dc59b2684fda94",
+      "image_link": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+      "metadata_hash": "071b6438d0f3b88657c13c4b1b7a3b9d6d997b1da5eb2b4747da6719007058b5",
+      "metadata_link": "https://arweave.net/NF9uVgms9mMrWDLZ128WgyWJ3xpPKXAJH0RiVTL13AI",
+      "onChain": true
+    },
+    "3": {
+      "name": "Taylor Swift Ticket",
+      "image_hash": "24068577187d37d771af69a722b9cab01b21b38a2df513b8b2dc59b2684fda94",
+      "image_link": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+      "metadata_hash": "071b6438d0f3b88657c13c4b1b7a3b9d6d997b1da5eb2b4747da6719007058b5",
+      "metadata_link": "https://arweave.net/4sbQ8uWsz4uf1yx3h4xxsdqiLgkREAcDpXAyJLfxoRA",
+      "onChain": true
+    },
+    "4": {
+      "name": "Taylor Swift Ticket",
+      "image_hash": "24068577187d37d771af69a722b9cab01b21b38a2df513b8b2dc59b2684fda94",
+      "image_link": "https://bafkreibea2cxogd5g7lxdl3ju4rltsvqdmq3hcrn6uj3rmw4lgzgqt62sq.ipfs.nftstorage.link/",
+      "metadata_hash": "071b6438d0f3b88657c13c4b1b7a3b9d6d997b1da5eb2b4747da6719007058b5",
+      "metadata_link": "https://arweave.net/vtKGgUL5vom6hPFVZbTNWfgYbxo7zUzghqeS4XJAyWk",
+      "onChain": true
+    }
+  }
+}

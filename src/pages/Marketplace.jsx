@@ -10,10 +10,10 @@ const Marketplace = () => {
     ];
 
     const featuresArray = [
-        { name: 'twice1', image: '../card_image/Twice 1.jpg', title: 'Na yeon', description: '0.5 SOL' , owner: 'By: 0x1788948487'},
+        { name: 'twice1', image: '../card_image/Twice 1.jpg', title: 'NaYeon', description: '0.5 SOL' , owner: 'By: 0x1788948487'},
         { name: 'twice2', image: '../card_image/Twice 2.jpg', title: 'Jeong Yeon', description: '0.2 SOL', owner: 'By: 0x1989690949'},
-        { name: 'twice3', image: '../card_image/Twice 3.jpg', title: 'MOMO', description: '0.6 SOL', owner: 'By: 0x1189994933'},
-        { name: 'twice4', image: '../card_image/Twice 4.jpg', title: 'Ji Hyo', description: '0.45 SOL', owner: 'By: 0x1549649944'},
+        { name: 'twice3', image: '../card_image/Twice 3.jpg', title: 'MoMo', description: '0.6 SOL', owner: 'By: 0x1189994933'},
+        { name: 'twice4', image: '../card_image/Twice 4.jpg', title: 'JiHyo', description: '0.45 SOL', owner: 'By: 0x1549649944'},
     ];
   return (
     <div className="bg-gray-100">

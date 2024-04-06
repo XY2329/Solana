@@ -1,0 +1,50 @@
+{
+  "program": {
+    "candyMachine": "3mg7pZ1mzMPhSuhFk1PG1dBwZYwvukN3bXFQgaPNZNRi",
+    "candyGuard": "qBzJdBRDosof5u2Ngrujx5Ey8veQYWWGFDoYcFPVCsg",
+    "candyMachineCreator": "vEBdq3dHHrXfuj3XQL5EtowSnPJsUYyiqZnA2UXojCg",
+    "collectionMint": "2zmC7YZToW38FUQpGbMbWFhcYMJQpi7Ub5ZyJ8GxmxaC"
+  },
+  "items": {
+    "-1": {
+      "name": "Twice Ready to Be Concert",
+      "image_hash": "6b478c56e3ade881a3defde11139b4f7c4de74c5b4e6be040f3f5e3ac89ca241",
+      "image_link": "https://bafybeigahz75rxjabul7234xn77bw5t4ma6xbywonytxxgimffpx4uszay.ipfs.nftstorage.link",
+      "metadata_hash": "cf55040de62fa10560a0b5b19fd64620298431c84e1802288b706d5d16978919",
+      "metadata_link": "https://arweave.net/Wxy7v5vnfdz6emFqnL1fft-HpTGdWIhfNkA6t_MjoHg",
+      "onChain": true
+    },
+    "0": {
+      "name": "Twice Ready to Be Concert",
+      "image_hash": "6b478c56e3ade881a3defde11139b4f7c4de74c5b4e6be040f3f5e3ac89ca241",
+      "image_link": "https://bafybeigahz75rxjabul7234xn77bw5t4ma6xbywonytxxgimffpx4uszay.ipfs.nftstorage.link",
+      "metadata_hash": "48c276a1b1f69ca8bc18430eb5bb4664f9ecd3ad0f1ab99ea6bf75338e0d8447",
+      "metadata_link": "https://arweave.net/JmCNWsmUpjEAygripFcSb0NnJVC9ulx3ie_HtYGP7AY",
+      "onChain": true
+    },
+    "1": {
+      "name": "Twice Ready to Be Concert",
+      "image_hash": "6b478c56e3ade881a3defde11139b4f7c4de74c5b4e6be040f3f5e3ac89ca241",
+      "image_link": "https://bafybeigahz75rxjabul7234xn77bw5t4ma6xbywonytxxgimffpx4uszay.ipfs.nftstorage.link",
+      "metadata_hash": "cf55040de62fa10560a0b5b19fd64620298431c84e1802288b706d5d16978919",
+      "metadata_link": "https://arweave.net/c0cYAPNMtCaQElzqW0R_I1LEu0UoE52RvVnoZaGIMH0",
+      "onChain": true
+    },
+    "2": {
+      "name": "Twice Ready to Be Concert",
+      "image_hash": "6b478c56e3ade881a3defde11139b4f7c4de74c5b4e6be040f3f5e3ac89ca241",
+      "image_link": "https://bafybeigahz75rxjabul7234xn77bw5t4ma6xbywonytxxgimffpx4uszay.ipfs.nftstorage.link",
+      "metadata_hash": "cf55040de62fa10560a0b5b19fd64620298431c84e1802288b706d5d16978919",
+      "metadata_link": "https://arweave.net/tvZgpk8b-IJDdCslNxngNSkMlq-Olx9kz5FIo0FzYJg",
+      "onChain": true
+    },
+    "3": {
+      "name": "Twice Ready to Be Concert",
+      "image_hash": "6b478c56e3ade881a3defde11139b4f7c4de74c5b4e6be040f3f5e3ac89ca241",
+      "image_link": "https://bafybeigahz75rxjabul7234xn77bw5t4ma6xbywonytxxgimffpx4uszay.ipfs.nftstorage.link",
+      "metadata_hash": "cf55040de62fa10560a0b5b19fd64620298431c84e1802288b706d5d16978919",
+      "metadata_link": "https://arweave.net/2_PT2qHLevn_6qMFN9fF6HclO5FnzCBNJMjK0D2scTs",
+      "onChain": true
+    }
+  }
+}
