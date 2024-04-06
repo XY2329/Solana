@@ -14,8 +14,6 @@ import {
 } from "@metaplex-foundation/js";
 import * as fs from "fs";
 
-
-
 const Pay = ({ eventData }) => {
 
   const { connection } = useWallet();
