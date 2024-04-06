@@ -10,7 +10,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-gray-100">
       <CollectionProfile />
       <Title heading="NFT Collections" />
       <Filter />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, TextField, Radio, RadioGroup, FormControlLabel, FormControl, Typography, Box, Tabs, Tab } from "@mui/material";
+import { ConnectWallet } from '../components';
 
 const Pay = ({ eventData }) => {
   const [ticketQuantity, setTicketQuantity] = useState(0);
@@ -56,7 +57,7 @@ const Pay = ({ eventData }) => {
             </RadioGroup>
           </FormControl>
           <div className="flex justify-between mt-4">
-            <Button variant="contained" color="primary" >Connect Wallet</Button>
+            <ConnectWallet/>
             <Button variant="contained" color="secondary" >Buy Now</Button>
           </div>
         </div>

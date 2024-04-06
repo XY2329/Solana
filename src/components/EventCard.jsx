@@ -6,7 +6,7 @@ const EventCard = (eventData) => {
     const navigate = useNavigate();
 
     const handleLearnMore = (eventData) => {
-        navigate(`/payment/${encodeURIComponent(eventData.id)}`, { state: eventData });
+        navigate(`/payment/${encodeURIComponent(eventData.title)}`, { state: eventData });
     };
 
     return (
