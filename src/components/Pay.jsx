@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 import { Button, TextField, Radio, RadioGroup, FormControlLabel, FormControl, Typography, Box, Tabs, Tab } from "@mui/material";
 import { ConnectWallet } from '../components';
 import ColData from "../datafile/col.json";
+import { useWallet } from '@solana/wallet-adapter-react';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { Connection, Keypair, PublicKey } from "@solana/web3.js";
+import {
+  Metaplex,
+  keypairIdentity,
+  bundlrStorage,
+  toMetaplexFile,
+  toBigNumber,
+} from "@metaplex-foundation/js";
+import * as fs from "fs";
+import {Mint} from './Mint.jsx';
 
 const Pay = ({ eventData }) => {
   const [ticketQuantity, setTicketQuantity] = useState(0);
@@ -18,7 +30,16 @@ const Pay = ({ eventData }) => {
     setValue(newValue);
   };
 
+  const { connected } = useWallet();
   const [value, setValue] = React.useState(0);
+
+
+
+
+  const handleClick = () => {
+
+
+  };
 
   return (
     <div className="bg-white p-6 shadow-lg rounded mx-auto my-12" style={{ maxWidth: '950px', width: '100%', minHeight: '650px', borderRadius: '15px' }}>
@@ -62,8 +83,8 @@ const Pay = ({ eventData }) => {
             </FormControl>
           </div>
           <div className="flex justify-between mt-4">
-            <ConnectWallet />
-            <Button variant="contained" style={{ backgroundColor: '#a99fec', color: '#fff', borderRadius: '20px' }} >Buy Now</Button>
+            <WalletMultiButton />
+            <Mint/>
           </div>
         </div>
       </TabPanel>
