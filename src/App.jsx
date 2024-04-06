@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar, Footer } from './components';
 
-import { Home, Payment, Portfolio } from './pages';
+import { Home, Payment, Portfolio, Marketplace } from './pages';
 
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/payment/:id" element={<Payment />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="Marketplace" element={<Marketplace />} />
         </Routes>
         </main>
         <Footer />

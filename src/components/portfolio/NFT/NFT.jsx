@@ -9,7 +9,7 @@ import Styles from './NFT.module.css';
 const NFT = ({NFTData}) => {
 
   return (
-    <div className ={Styles.NFT}>
+    <div className ={Styles.NFT_bigbox}>
         {NFTData.map((el, i) => (
             <div className= {Styles.NFT_box} key={i+1}>
                 <div className={Styles.NFT_box_img}>

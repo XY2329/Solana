@@ -1,19 +1,18 @@
-/*
+
 import React from 'react'
-import Image from 'next/image'
+
 
 //INTERNAL IMPORT
 import Style from './Banner.module.css';
 
-const Banner = ({bannerImage}) => {
+const Banner = () => {
   return (
-    <div className={Style.Banner}>
-      <div className={Style.banner_img}>
-        <Image src="/img/bannerImage.jpg" objectFit="cover" alt="background" width={1500} height={300}/>
+    <div className={Style.banner}>
+      <div>
+        <img src="/card_image/navbar-icons.png" alt="background" width={2000} height={200}/>
       </div>
       </div> 
   )
 }
 
 export default Banner
-*/

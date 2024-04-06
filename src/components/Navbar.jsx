@@ -50,8 +50,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 // Define the pages and menu options
-const pages = ['Home', 'Events', 'Help', 'Marketplace', 'Contact Us'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['Home', 'Events', 'Marketplace', 'Contact Us'];
+const settings = ['Profile', 'Account', 'Portfolio', 'Logout'];
 
 function Navbar() {
   // State variables
@@ -84,10 +84,11 @@ function Navbar() {
 
   // Define the routes for each option
   const routes = {
-    Dashboard: '/portfolio',
+    Portfolio: '/portfolio',
     Profile: '/profile',
     Account: '/account',
     Logout: '/logout',
+    Marketplace: '/marketplace',
   };
 
   // Function to handle navigation to the specified route

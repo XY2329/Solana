@@ -1,5 +1,5 @@
 import React from 'react';
-import {CollectionProfile, Filter, NFT, Title } from '../components';
+import {CollectionProfile, Filter, NFT, Title, Banner } from '../components';
 
 const Portfolio = () => {
   const collectionArray = [
@@ -11,10 +11,12 @@ const Portfolio = () => {
 
   return (
     <div className="bg-gray-100">
+      <Banner />
       <CollectionProfile />
       <Title heading="NFT Collections" />
       <Filter />
       <NFT NFTData={collectionArray} />
+      <Title />
     </div>
   );
 };

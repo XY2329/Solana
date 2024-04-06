@@ -51,6 +51,16 @@
     line-height: 0;
 }
 
+.NFT_box_info_right{
+    display: flex;
+    align-items: center;
+}
+
+.NFT_box_info_right p{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1;
+}
 
 
 @media screen and (max-width: 35em){
