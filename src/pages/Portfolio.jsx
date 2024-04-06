@@ -15,6 +15,7 @@ const Portfolio = () => {
       <Title heading="NFT Collections" />
       <Filter />
       <NFT NFTData={collectionArray} />
+      <Title />
     </div>
   );
 };

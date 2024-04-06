@@ -13,3 +13,4 @@ export { default as Title } from './portfolio/Title/Title.jsx';
 
 //marketplace components
 export { default as Fmarket } from './marketplace/Fmarket.jsx';
+export {default as NFT_market} from './marketplace/NFT_market/NFT_market.jsx';
