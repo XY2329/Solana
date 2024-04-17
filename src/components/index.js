@@ -3,7 +3,8 @@ export { default as Slider } from './Slider';
 export { default as EventCard } from './EventCard';
 export { default as Pay } from './Pay';
 export { default as Footer } from './Footer';
-export { default as ConnectWallet } from './ConnectWallet';
+export { default as Pay2 } from './Pay2';
+
 //portfolio  components
 export { default as Banner } from './portfolio/Banner/Banner.jsx';
 export { default as CollectionProfile } from './portfolio/CollectionProfile/CollectionProfile.jsx';

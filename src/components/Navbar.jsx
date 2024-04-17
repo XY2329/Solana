@@ -5,6 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import { styled, alpha } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
+import Settings from '@mui/icons-material/Settings';
+import Logout from '@mui/icons-material/Logout';
 
 // Styled components for search bar
 const Search = styled('div')(({ theme }) => ({
@@ -97,7 +99,7 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="fixed" sx={{ backgroundColor: color ? 'rgba(0, 0, 0, 0.9)' : 'transparent', transition: 'background-color 0.2s ease-in' }}>
+    <AppBar position="fixed" sx={{ backgroundColor: color ? 'rgba(0, 0, 0, 0.9)' : 'transparent', transition: 'background-color 0.1s ease-in' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* Logo and Text */}

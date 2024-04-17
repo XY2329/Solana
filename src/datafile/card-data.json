@@ -6,6 +6,7 @@
         "title": "TWICE 5TH WORLD TOUR READY TO BE ",
         "date": "SATURDAY, 02 SEPTEMBER 2023",
         "venue": "Singapore Indoor Stadium",
+        "genre": "KPOP",
         "img": "../card_image/twice.png" 
     },
     {
@@ -15,6 +16,7 @@
         "title": "ED SHEERAN +–=÷× TOUR ",
         "date": "SATURDAY, 24 FEBRUARY 2024",
         "venue": "Bukit Jalil National Stadium",
+        "genre": "Pop Music",
         "img": "../card_image/ed_con.jpg"
         
     },
@@ -25,6 +27,7 @@
         "title": "TAYLOR SWIFT THE ERAS TOUR",
         "date": "SATURDAY, 2 MARCH 2024",
         "venue": "Singapore National Stadium",
+        "genre": "Pop Music",
         "img": "../card_image/tay_con.jpg"
         
     },
@@ -35,6 +38,7 @@
         "title": "BAZZI THE INFINITE DREAM TOUR",
         "date": "SUNDAY, 23 OCTOBER 2022",
         "venue": "Revolution Live, Florida, United States",
+        "genre": "Pop Music",
         "img": "../card_image/baz_con.jpg"
     },
     {
@@ -44,6 +48,7 @@
         "title": "I MET YOU WHEN I WAS 18 TOUR",
         "date": "TUESDAY, 23 JANUARY 2018",
         "venue": "Los Angeles, United States",
+        "genre": "Pop Music",
         "img": "../card_image/lauv_con.jpg"
     },
     {
@@ -53,6 +58,7 @@
         "title": "MUSIC of the SPHERES TOUR",
         "date": "THURSDAY, 23 NOVEMBER 2023",
         "venue": "Bukit Jalil National Stadium",
+        "genre": "Pop Music",
         "img": "../card_image/coldplay.png"
     }
 ]

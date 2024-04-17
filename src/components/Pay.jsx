@@ -1,22 +1,8 @@
 import React, { useState } from 'react';
 import { Button, TextField, Radio, RadioGroup, FormControlLabel, FormControl, Typography, Box, Tabs, Tab } from "@mui/material";
-import { ConnectWallet } from '../components';
 import ColData from "../datafile/col.json";
-import { useWallet } from '@solana/wallet-adapter-react';
-//import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import {
-  Metaplex,
-  keypairIdentity,
-  bundlrStorage,
-  toMetaplexFile,
-  toBigNumber,
-} from "@metaplex-foundation/js";
-import * as fs from "fs";
 
 const Pay = ({ eventData }) => {
-
-  const { connection } = useWallet();
 
   const [ticketQuantity, setTicketQuantity] = useState(0);
   const [isBNPL, setIsBNPL] = useState('full');
@@ -31,8 +17,6 @@ const Pay = ({ eventData }) => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
-  const { connected } = useWallet();
   const [value, setValue] = React.useState(0);
 
   return (
@@ -77,9 +61,7 @@ const Pay = ({ eventData }) => {
             </FormControl>
           </div>
           <div className="flex justify-between mt-4">
-            <ConnectWallet />
             <button
-              disabled={!connection}
               style={{
                 backgroundColor: '#a99fec', // Green when connected, red otherwise
                 color: 'white',

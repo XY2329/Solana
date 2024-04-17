@@ -14,9 +14,9 @@ const EventCard = (eventData) => {
             <div className="flex justify-between items-center mb-8">
                 <h2 className="text-4xl font-bold">Upcoming Events</h2>
                 <div>
-                    <button className="rounded-full border px-6 py-2 mr-6 text-sm">Concerts</button>
-                    <button className="rounded-full border px-6 py-2 mr-6 text-sm">Sports</button>
-                    <button className="rounded-full border px-6 py-2 text-sm">Festivals</button>
+                    <button className="rounded-full border px-6 py-2 mr-6 text-lg bg-white">Concerts</button>
+                    <button className="rounded-full border px-6 py-2 mr-6 text-lg bg-white">Sports</button>
+                    <button className="rounded-full border px-6 py-2 text-lg bg-white">Festivals</button>
                 </div>
             </div>
             <div className="flex flex-wrap justify-start -mx-2">
